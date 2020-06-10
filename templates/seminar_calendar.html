@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta content="telephone=no" name="format-detection">
+	<title>IASTATE Theme • Iowa State University</title>
+	<link href="https://cdn.theme.iastate.edu/nimbus-sans/css/nimbus-sans.css" rel="stylesheet">
+	<link href="https://cdn.theme.iastate.edu/merriweather/css/merriweather.css" rel="stylesheet">
+	<link href="https://cdn.theme.iastate.edu/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<!-- <link href="css/iastate.legacy.min.css" rel="stylesheet"> // Include if your content requires legacy IASTATE theme CSS -->
+	<link href="css/iastate.min.css" rel="stylesheet">
+	<!-- <link href="css/site.css" rel="stylesheet" media="all"> // Site-specific CSS and theme overrides -->
+	<link href="https://cdn.theme.iastate.edu/favicon/favicon.ico" rel="icon" type="image/x-icon">
+	<link href="https://cdn.theme.iastate.edu/favicon/favicon.png" rel="icon" type="">
+	<link href="https://cdn.theme.iastate.edu/favicon/apple-touch-icon.png" rel="icon">
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="js/vendor/bootstrap-submenu.min.js"></script>
+	<script src="js/iastate.js"></script>
+
+	 <title>{{ title }} </title>
+</head>
+
+<body class="">
+
+
+<!-- jinja2 template stuff for flask -->
+{% for d in data %}
+        <div><p>{{ d.date }}: <b>{{ d.speaker }}</b> - {{ d.title }}</p></div>
+{% endfor %}
+
+
+</body>
+</html>
